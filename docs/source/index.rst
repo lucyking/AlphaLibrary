@@ -9,7 +9,7 @@ Welcome to RFUI-Framework's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 10
+   :maxdepth: 100
     
    usage
 
