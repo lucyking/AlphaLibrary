@@ -33,8 +33,8 @@ print sys.path
 re = os.popen("pip install robotframework-mobilelibrary robotframework-weblibrary selenium robotframework robotframework-ride Appium-Python-Client decorator inspect abc").read()
 print "[>>>]",re
 
-version = os.popen("python --verison").read()
-print "[>>>][Version:]",version
+ls = os.listdir('/home/docs/checkouts/readthedocs.org/user_builds/alphalibrary/envs/latest/local/lib/python2.7/site-packages')
+print "[>>>][Version:]",ls
 #sys.exit()
 
 # -- General configuration ------------------------------------------------
