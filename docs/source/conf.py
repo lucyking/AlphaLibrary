@@ -26,6 +26,11 @@ print __pkg__
 print sys.path
 sys.path.insert(1, __pkg__)
 print sys.path
+sys.path.insert(1, os.path.join(__pkg__,"../"))
+print sys.path
+sys.path.insert(1, os.path.join(__pkg__,"../src"))
+print sys.path
+
 #sys.exit()
 
 # -- General configuration ------------------------------------------------
