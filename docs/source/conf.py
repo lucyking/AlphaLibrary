@@ -25,6 +25,7 @@ __pkg__ = os.path.dirname(__dir__)
 print __pkg__
 print sys.path
 sys.path.insert(1, __pkg__)
+print sys.path
 #sys.exit()
 
 # -- General configuration ------------------------------------------------
