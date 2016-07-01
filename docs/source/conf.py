@@ -30,7 +30,8 @@ sys.path.insert(1, os.path.join(__pkg__,"../"))
 print sys.path
 sys.path.insert(1, os.path.join(__pkg__,"../src"))
 print sys.path
-
+re = os.popen("pip install selenium robotframework Appium-Python-Client decorator inspect abc").read()
+print "[>>>]",re
 #sys.exit()
 
 # -- General configuration ------------------------------------------------
