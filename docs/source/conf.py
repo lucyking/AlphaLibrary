@@ -24,14 +24,17 @@ print __dir__
 __pkg__ = os.path.dirname(__dir__)
 print __pkg__
 print sys.path
-sys.path.insert(1, __pkg__)
+sys.path.insert(0, __pkg__)
 print sys.path
-sys.path.insert(1, os.path.join(__pkg__,"../"))
+sys.path.insert(0, os.path.join(__pkg__,"../"))
 print sys.path
-sys.path.insert(1, os.path.join(__pkg__,"../src"))
+sys.path.insert(0, os.path.join(__pkg__,"../src"))
 print sys.path
 re = os.popen("pip install robotframework-mobilelibrary robotframework-weblibrary selenium robotframework robotframework-ride Appium-Python-Client decorator inspect abc").read()
 print "[>>>]",re
+
+version = os.popen("python --verison").read()
+print "[>>>][Version:]",version
 #sys.exit()
 
 # -- General configuration ------------------------------------------------
