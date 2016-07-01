@@ -1,7 +1,7 @@
 MobileKeywords methods
 --------------------------
 
-.. autoclass:: AppiumLibrary.keywords._mobilekeywords._MobileKeywords
+.. autoclass:: src.AppiumLibrary.keywords._mobilekeywords._MobileKeywords
     :members:
 
 
