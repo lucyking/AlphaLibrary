@@ -90,7 +90,7 @@ release = u'0.0.1'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = zh
+language = none
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -261,7 +261,7 @@ htmlhelp_basename = 'MobileLibrarydoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-#latex_elements = {
+latex_elements = {
      # The paper size ('letterpaper' or 'a4paper').
      #
      # 'papersize': 'letterpaper',
@@ -277,15 +277,15 @@ htmlhelp_basename = 'MobileLibrarydoc'
      # Latex figure (float) alignment
      #
      # 'figure_align': 'htbp',
-#}
+}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-#latex_documents = [
-#    (master_doc, 'MobileLibrary.tex', u'MobileLibrary Documentation',
-#     u'QA', 'manual'),
-#]
+latex_documents = [
+    (master_doc, 'MobileLibrary.tex', u'MobileLibrary Documentation',
+     u'QA', 'manual'),
+]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
