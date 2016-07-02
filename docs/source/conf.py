@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 #
 # MobileLibrary documentation build configuration file, created by
 # sphinx-quickstart on Fri Jul 01 20:25:41 2016.
