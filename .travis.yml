@@ -16,3 +16,8 @@ install:
 #script: nosetests
 script:
   - python test.py 
+  - python -m pylint --version
+  - python -m pylint
+  - pylint
+  
+  
