@@ -1,4 +1,6 @@
 #robotframework-mobileLibrary
+![buildstatus](https://api.travis-ci.org/lucyking/AlphaLibrary.svg?branch=master) 
+
 Here RobotFramework-MobileLibrary is a updated library based on robotframework-appiumlibrary-1.3.5, 
 we add some patches on it according to our project requirements.
 
