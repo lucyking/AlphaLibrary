@@ -17,7 +17,7 @@ install:
 script:
   - python test.py 
   - python -m pylint --version
-  - python -m pylint
-  - pylint
+  - python -m pylint test.py
+  # - pylint
   
   
