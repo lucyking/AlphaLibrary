@@ -19,6 +19,7 @@ class AppiumLibrary(
     _KeyeventKeywords,
     _AndroidUtilsKeywords,
     _MobileKeywords,
+    _ImageKeywords,
 ):
     """AppiumLibrary is a App testing library for Robot Framework.
 
