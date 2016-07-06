@@ -390,6 +390,17 @@ texinfo_documents = [
 #
 # texinfo_no_detailmenu = False
 
+# mock some functions
+class Mock(object):
+    @classmethod
+    def __getattr__(cls, name):
+            return Mock()
+
+
+MOCK_MODULES = ['cv2', 'numpy', 'win32ui', 'win32con', 'win32api', 'win32gui', 'win32process']
+sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
+
+
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+# intersphinx_mapping = {'https://docs.python.org/': None}
