@@ -5,6 +5,13 @@ MobileKeywords methods
     :members:
 
 
+ImageKeywords methods
+--------------------------
+
+.. autoclass:: AppiumLibrary.keywords._imagekeywords._ImageKeywords
+    :members:
+
+
 Elemetn methods
 --------------------------
 
