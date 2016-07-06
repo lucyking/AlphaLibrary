@@ -30,11 +30,11 @@ sys.path.insert(0, os.path.join(__pkg__,"../"))
 print sys.path
 sys.path.insert(0, os.path.join(__pkg__,"../src"))
 print sys.path
-re = os.popen("easy_install robotframework-mobilelibrary robotframework-weblibrary selenium robotframework robotframework-ride Appium-Python-Client decorator inspect abc").read()
-print "[>>>]",re
+# re = os.popen("easy_install robotframework-mobilelibrary robotframework-weblibrary selenium robotframework robotframework-ride Appium-Python-Client decorator inspect abc").read()
+# print "[>>>]",re
 
-ls = os.listdir('/home/docs/checkouts/readthedocs.org/user_builds/alphalibrary/envs/latest/local/lib/python2.7/site-packages')
-print "[>>>][Version:]",ls
+# ls = os.listdir('/home/docs/checkouts/readthedocs.org/user_builds/alphalibrary/envs/latest/local/lib/python2.7/site-packages')
+# print "[>>>][Version:]",ls
 #sys.exit()
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
@@ -85,6 +85,7 @@ else:
 
 #     'sphinx.ext.autodoc',
 extensions = [
+    'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.coverage',
     'sphinx.ext.viewcode',
