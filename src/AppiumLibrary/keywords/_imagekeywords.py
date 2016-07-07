@@ -49,8 +49,10 @@ class _ImageKeywords(KeywordGroup):
 
     def mobile_image_set_timeout(self, time_num):
         """
-        time_num  wait in N secs to capture background screen
-        Mobile Image Set Timeout    10
+        :parameter
+            time_num:  wait in N secs to capture background screen
+        :example
+            Mobile Image Set Timeout    10
         """
         self._timeout = time_num
 
