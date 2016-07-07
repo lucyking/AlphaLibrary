@@ -50,7 +50,9 @@ class _ImageKeywords(KeywordGroup):
     def mobile_image_set_timeout(self, time_num):
         """
         parameter:     time_num:  wait in N secs to capture background screen
+
         example:       Mobile Image Set Timeout    10
+
         +------------+------------+-----------+
         | Mobile Image Set Timeout| 10|
         +------------+------------+-----------+
