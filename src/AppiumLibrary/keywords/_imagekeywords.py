@@ -7,7 +7,7 @@ from robot.libraries.BuiltIn import BuiltIn
 
 
 class _ImageKeywords(KeywordGroup):
-    """ Wrapper Keywords for RobotFramework to click mobile screen, based on opencv & aircv.
+    """  **Wrapper Keywords for RobotFramework to click mobile screen, based on opencv & aircv.**
     """
 
     def __init__(self):
@@ -16,14 +16,14 @@ class _ImageKeywords(KeywordGroup):
         self._timeout = 10
         self.img_path = ""
         self.output_dir = ""
-        """only can achieve BuiltIn().get_variables() at running time"""
+        """ only can achieve BuiltIn().get_variables() at **running time**
+        """
         # sys_variables = BuiltIn().get_variables()
         # self.output_dir = os.path.abspath(sys_variables['${OUTPUTDIR}'])
 
     def _capture_background(self, filename="screen.png"):
         """
-        :param filename: the background screen
-        :return: None
+        filename  the background screen
         """
         self._screen = os.path.join(self.output_dir, filename)
         self.capture_page_screenshot_without_html_log(os.path.join(self.output_dir, self._screen))
@@ -49,8 +49,8 @@ class _ImageKeywords(KeywordGroup):
 
     def mobile_image_set_timeout(self, time_num):
         """
-        :param time_num:  wait in N secs to capture background screen
-        :return: None
+        time_num  wait in N secs to capture background screen
+        Mobile Image Set Timeout    10
         """
         self._timeout = time_num
 
