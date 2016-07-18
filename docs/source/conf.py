@@ -397,7 +397,7 @@ class Mock(object):
             return Mock()
 
 
-MOCK_MODULES = ['cv2', 'numpy', 'win32ui', 'win32con', 'win32api', 'win32gui', 'win32process','robot.libraries.BuiltIn','BuiltIn','robot']
+MOCK_MODULES = ['robot.libraries.BuiltIn','robot.libraries','BuiltIn','cv2', 'numpy', 'win32ui', 'win32con', 'win32api', 'win32gui', 'win32process']
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 
