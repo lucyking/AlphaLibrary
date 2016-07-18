@@ -4,7 +4,7 @@ import traceback
 from time import sleep, time
 import aircv as ac
 from AppiumLibrary.keywords.keywordgroup import KeywordGroup
-from robot.libraries.BuiltIn import BuiltIn
+# from robot.libraries.BuiltIn import BuiltIn
 
 
 class _ImageKeywords(KeywordGroup):
@@ -33,9 +33,9 @@ class _ImageKeywords(KeywordGroup):
     def _prepare(self):
         """ update background  screen
         """
-        if not self.output_dir:
-            sys_variables = BuiltIn().get_variables()
-            self.output_dir = os.path.abspath(sys_variables['${OUTPUTDIR}'])
+        #if not self.output_dir:
+        #    sys_variables = BuiltIn().get_variables()
+        #    self.output_dir = os.path.abspath(sys_variables['${OUTPUTDIR}'])
 
         if os.path.isfile(self._screen):
             os.remove(self._screen)
