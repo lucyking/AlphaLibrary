@@ -36,6 +36,7 @@ class _ImageKeywords(KeywordGroup):
         #if not self.output_dir:
         #    sys_variables = BuiltIn().get_variables()
         #    self.output_dir = os.path.abspath(sys_variables['${OUTPUTDIR}'])
+        self.output_dir = './'
 
         if os.path.isfile(self._screen):
             os.remove(self._screen)
